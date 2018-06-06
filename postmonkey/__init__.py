@@ -1,6 +1,6 @@
 import json
 import requests
-from urllib import quote
+from urllib.parse import quote
 from functools import partial
 
 from . exceptions import (
