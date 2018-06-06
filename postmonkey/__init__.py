@@ -87,7 +87,7 @@ class PostMonkey(object):
 
         try:
             resp = self.postrequest(url, data=payload, headers=headers)
-        except Exception, e:
+        except Exception as e:
             raise PostRequestError(e)
 
         decoded = self._deserialize_response(resp.text)
